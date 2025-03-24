@@ -19,11 +19,11 @@ jobs:
       - name: Set up Node.js
         uses: actions/setup-node@v2
         with:
-          node-version: "16" # 可以根据项目需要修改 Node 版本
+          node-version: "20" # 可以根据项目需要修改 Node 版本
 
       # Step 3: Install dependencies
       - name: Install dependencies
-        run: npm install
+        run: npm ci
 
       # Step 4: Build the Vite project
       - name: Build the project
